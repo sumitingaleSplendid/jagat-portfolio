@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jagat Mohith Andhavarapu — AI Data Engineer & Lakehouse Architect</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #060913;
+      color: #e2e8f0;
+      overflow-x: hidden;
+    }
+    h1, h2, h3, .font-display {
+      font-family: 'Space Grotesk', sans-serif;
+    }
+    .glass-card {
+      background: rgba(15, 23, 42, 0.65);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(56, 189, 248, 0.14);
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .glass-card:hover {
+      border-color: rgba(56, 189, 248, 0.45);
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px -15px rgba(2, 132, 199, 0.25);
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .glow-orb {
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(120px);
+      z-index: -1;
+      opacity: 0.35;
+      pointer-events: none;
+    }
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: all 0.7s ease-out;
+    }
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-sky-500/30 selection:text-sky-200">
+
+  <!-- Ambient Background Orbs -->
+  <div class="glow-orb w-96 h-96 bg-sky-600 top-[-10%] left-[-5%]"></div>
+  <div class="glow-orb w-[30rem] h-[30rem] bg-indigo-700 bottom-[10%] right-[-10%]"></div>
+
+  <!-- Navbar -->
+  <header class="fixed top-0 w-full z-50 border-b border-slate-800/70 bg-[#060913]/80 backdrop-blur-md">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#" class="font-display font-bold text-lg tracking-tight text-white">
+        JAGAT<span class="text-sky-400">.DATA</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm text-slate-400">
+        <a href="#impact" class="hover:text-sky-400 transition">Impact</a>
+        <a href="#experience" class="hover:text-sky-400 transition">Experience</a>
+        <a href="#projects" class="hover:text-sky-400 transition">Projects</a>
+        <a href="#skills" class="hover:text-sky-400 transition">Tech Stack</a>
+        <a href="#education" class="hover:text-sky-400 transition">Education</a>
+      </nav>
+      <a href="#contact" class="px-4 py-2 rounded-full text-xs font-semibold bg-sky-500/15 text-sky-300 border border-sky-400/30 hover:bg-sky-500 hover:text-slate-950 transition">
+        Get in Touch
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="pt-36 pb-20 px-6 max-w-6xl mx-auto">
+    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-medium bg-sky-500/10 border border-sky-400/25 text-sky-300 mb-6">
+      <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+      AI Data Engineer · USA · 5+ Years Experience
+    </div>
+    <h1 class="font-display text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-[1.08] mb-6">
+      Jagat Mohith <br />
+      <span class="gradient-text">Andhavarapu</span>
+    </h1>
+    <p class="text-lg sm:text-xl text-slate-300 max-w-2xl leading-relaxed mb-8">
+      Engineering the data foundations that make enterprise analytics faster and AI systems reliable. Specialized in <span class="text-white font-medium">Cloud Lakehouses</span>, <span class="text-white font-medium">500 GB/day ETL Pipelines</span>, and <span class="text-white font-medium">Production RAG Infrastructure</span>.
+    </p>
+    <div class="flex flex-wrap items-center gap-4">
+      <a href="https://linkedin.com/in/jagatmohithandhavarapu" target="_blank" class="px-6 py-3 rounded-xl font-semibold text-sm bg-sky-500 text-slate-950 hover:bg-sky-400 transition shadow-lg shadow-sky-500/20">
+        Connect on LinkedIn ↗
+      </a>
+      <a href="mailto:jagat@myworkingmail.com" class="px-6 py-3 rounded-xl font-semibold text-sm glass-card text-white hover:border-sky-400">
+        jagat@myworkingmail.com
+      </a>
+      <a href="tel:+17206916490" class="px-5 py-3 rounded-xl text-sm text-slate-300 hover:text-white transition">
+        📞 +1 (720) 691-6490
+      </a>
+    </div>
+  </section>
+
+  <!-- Impact Metrics Bento Grid -->
+  <section id="impact" class="py-12 px-6 max-w-6xl mx-auto reveal">
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="glass-card p-6 rounded-2xl">
+        <div class="font-display text-3xl sm:text-4xl font-bold text-sky-400 mb-1">500 GB/day</div>
+        <div class="text-sm text-slate-400">Databricks & Delta Lake financial data processing</div>
+      </div>
+      <div class="glass-card p-6 rounded-2xl">
+        <div class="font-display text-3xl sm:text-4xl font-bold text-indigo-400 mb-1">10× Faster</div>
+        <div class="text-sm text-slate-400">Downstream enterprise analytics in Snowflake</div>
+      </div>
+      <div class="glass-card p-6 rounded-2xl">
+        <div class="font-display text-3xl sm:text-4xl font-bold text-emerald-400 mb-1">40% Less</div>
+        <div class="text-sm text-slate-400">Manual document review via semantic RAG pipelines</div>
+      </div>
+      <div class="glass-card p-6 rounded-2xl">
+        <div class="font-display text-3xl sm:text-4xl font-bold text-purple-400 mb-1">25% Lower</div>
+        <div class="text-sm text-slate-400">Insurance ETL pipeline latency & +45% ops efficiency</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="py-20 px-6 max-w-6xl mx-auto reveal">
+    <div class="mb-12">
+      <span class="text-xs uppercase tracking-widest text-sky-400 font-semibold">Career Trajectory</span>
+      <h2 class="font-display text-3xl sm:text-4xl font-bold text-white mt-2">Professional Experience</h2>
+    </div>
+
+    <div class="space-y-6">
+      <!-- First Citizens Bank -->
+      <div class="glass-card p-7 rounded-2xl">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+          <div>
+            <h3 class="font-display text-xl font-bold text-white">AI Data Engineer — First Citizens Bank</h3>
+            <p class="text-sm text-sky-400">Enterprise RAG Infrastructure · Lakehouse · LLM Evaluation</p>
+          </div>
+          <span class="text-xs font-medium px-3 py-1 rounded-full bg-slate-800 text-slate-300 w-fit">Dec 2024 – Present · USA</span>
+        </div>
+        <ul class="space-y-2.5 text-sm text-slate-300 list-disc list-inside">
+          <li>Automated Python & PySpark financial document ingestion with semantic chunking, cutting manual review by <strong class="text-white">40%</strong>.</li>
+          <li>Engineered Databricks & Delta Lake ETL pipelines processing <strong class="text-white">500 GB/day</strong> into retrieval-ready AI datasets.</li>
+          <li>Deployed Kubernetes RAG services integrating AWS S3, Glue, and Pinecone for low-latency semantic search.</li>
+          <li>Orchestrated daily Airflow & dbt quality checks, automated LLM evaluation for drift/relevance, and Kafka + Lambda event pipelines for embedding freshness.</li>
+        </ul>
+      </div>
+
+      <!-- MetLife -->
+      <div class="glass-card p-7 rounded-2xl">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+          <div>
+            <h3 class="font-display text-xl font-bold text-white">Data Engineer — MetLife</h3>
+            <p class="text-sm text-indigo-400">Snowflake · PySpark · dbt · Terraform</p>
+          </div>
+          <span class="text-xs font-medium px-3 py-1 rounded-full bg-slate-800 text-slate-300 w-fit">May 2023 – Nov 2024 · USA</span>
+        </div>
+        <ul class="space-y-2.5 text-sm text-slate-300 list-disc list-inside">
+          <li>Optimized Python, SQL, Kafka, and PySpark pipelines into Snowflake, reducing latency by <strong class="text-white">25%</strong> and accelerating analytics by <strong class="text-white">10×</strong>.</li>
+          <li>Implemented dbt validation, schema enforcement, and point-in-time correctness to prevent label leakage in ML workflows.</li>
+          <li>Built advanced temporal SQL stored procedures, early-stage insurance policy RAG search, and predictive alerting (<strong class="text-white">+45%</strong> operational efficiency).</li>
+          <li>Automated repeatable cloud infrastructure provisioning using Terraform modules and Git CI/CD workflows.</li>
+        </ul>
+      </div>
+
+      <!-- Cyient -->
+      <div class="glass-card p-7 rounded-2xl">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+          <div>
+            <h3 class="font-display text-xl font-bold text-white">Data Engineer — Cyient</h3>
+            <p class="text-sm text-purple-400">Delta Lake · AWS Glue · Airflow · Star Schema</p>
+          </div>
+          <span class="text-xs font-medium px-3 py-1 rounded-full bg-slate-800 text-slate-300 w-fit">Jan 2021 – Jul 2022 · India</span>
+        </div>
+        <ul class="space-y-2.5 text-sm text-slate-300 list-disc list-inside">
+          <li>Developed Python & PySpark workflows processing <strong class="text-white">2+ TB/month</strong> of structured and unstructured enterprise data.</li>
+          <li>Optimized SQL transformations and star-schema models in Delta Lake, improving dashboard retrieval by <strong class="text-white">2.5×</strong>.</li>
+          <li>Consolidated ingestion via Apache Airflow & AWS Glue with automated dbt lineage and regulatory validation.</li>
+        </ul>
+      </div>
+
+      <!-- Internship -->
+      <div class="glass-card p-6 rounded-2xl">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+          <div>
+            <h3 class="font-display text-lg font-bold text-white">Data Engineering Intern</h3>
+            <p class="text-sm text-slate-400">Built and optimized Python & SQL ETL/ELT scripts for extraction, cleansing, and validation.</p>
+          </div>
+          <span class="text-xs font-medium px-3 py-1 rounded-full bg-slate-800 text-slate-300 w-fit">May 2020 – Dec 2020 · India</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects -->
+  <section id="projects" class="py-20 px-6 max-w-6xl mx-auto reveal">
+    <div class="mb-12">
+      <span class="text-xs uppercase tracking-widest text-sky-400 font-semibold">Selected Architecture</span>
+      <h2 class="font-display text-3xl sm:text-4xl font-bold text-white mt-2">Featured Builds</h2>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6">
+      <!-- Project 1 -->
+      <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-xs font-semibold px-3 py-1 rounded-full bg-indigo-500/15 text-indigo-300 border border-indigo-400/20">AI Data Infrastructure</span>
+            <span class="text-xl">🧠</span>
+          </div>
+          <h3 class="font-display text-2xl font-bold text-white mb-3">Enterprise RAG Data Pipeline & Evaluation Harness</h3>
+          <p class="text-sm text-slate-300 leading-relaxed mb-6">
+            End-to-end document ingestion, semantic chunking, embedding generation, and vector retrieval workflows with automated lineage controls and reproducibility evaluation for retrieval quality.
+          </p>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-xs px-2.5 py-1 rounded-md bg-slate-800/90 text-sky-300">Python</span>
+          <span class="text-xs px-2.5 py-1 rounded-md bg-slate-800/90 text-sky-300">LlamaIndex</span>
+          <span class="text-xs px-2.5 py-1 rounded-md bg-slate-800/90 text-sky-300">AWS S3 / Glue</span>
+          <span class="text-xs px-2.5 py-1 rounded-md bg-slate-800/90 text-sky-300">Pinecone</span>
+          <span class="text-xs px-2.5 py-1 rounded-md bg-slate-800/90 text-sky-300">Airflow</span>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-xs font-semibold px-3 py-1 rounded-full bg-sky-500/15 text-sky-300 border border-sky-400/20">Cloud Data Platform</span>
+            <span class="text-xl">🏦</span>
+          </div>
+          <h3 class="font-display text-2xl font-bold text-white mb-3">Claims & Fraud Benchmark Data Platform</h3>
+          <p class="text-sm text-slate-300 leading-relaxed mb-6">
+            Idempotent ingestion and normalization pipelines for claims and fraud benchmark datasets featuring automated SQL/dbt quality rules, data governance controls, and IAM least-privilege security.
+          </p>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-xs px-2.5 py-1 rounded-md bg-slate-800/90 text-sky-300">Python</span>
+          <span class="text-xs px-2.5 py-1 rounded-md bg-slate-800/90 text-sky-300">SQL</span>
+          <span class="text-xs px-2.5 py-1 rounded-md bg-slate-800/90 text-sky-300">AWS Step Functions</span>
+          <span class="text-xs px-2.5 py-1 rounded-md bg-slate-800/90 text-sky-300">Snowflake</span>
+          <span class="text-xs px-2.5 py-1 rounded-md bg-slate-800/90 text-sky-300">dbt</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack -->
+  <section id="skills" class="py-20 px-6 max-w-6xl mx-auto reveal">
+    <div class="mb-12">
+      <span class="text-xs uppercase tracking-widest text-sky-400 font-semibold">Capabilities</span>
+      <h2 class="font-display text-3xl sm:text-4xl font-bold text-white mt-2">Technical Constellation</h2>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div class="glass-card p-6 rounded-2xl">
+        <h3 class="font-display font-bold text-white mb-3">⚙️ Data Engineering & Lakehouse</h3>
+        <p class="text-sm text-slate-300 leading-relaxed">Databricks, Delta Lake, Apache Airflow, Apache Kafka, dbt, ETL/ELT Development, Star Schema & Dimensional Modeling, Point-in-Time Correctness, Schema Enforcement.</p>
+      </div>
+      <div class="glass-card p-6 rounded-2xl">
+        <h3 class="font-display font-bold text-white mb-3">🧠 AI Data Infrastructure</h3>
+        <p class="text-sm text-slate-300 leading-relaxed">RAG Pipelines, Document Ingestion, Semantic Chunking, Embeddings, Pinecone Vector DB, LlamaIndex, Vector Search, LLM Evaluation, Context Retrieval.</p>
+      </div>
+      <div class="glass-card p-6 rounded-2xl">
+        <h3 class="font-display font-bold text-white mb-3">☁️ Cloud & Infrastructure</h3>
+        <p class="text-sm text-slate-300 leading-relaxed">AWS (S3, Glue, Athena, Lambda, EMR, Step Functions, VPC, IAM, KMS), Azure Data Factory, Snowflake, Amazon Redshift, Terraform, Kubernetes, Docker.</p>
+      </div>
+      <div class="glass-card p-6 rounded-2xl">
+        <h3 class="font-display font-bold text-white mb-3">💻 Programming & Big Data</h3>
+        <p class="text-sm text-slate-300 leading-relaxed">Python (Data Processing & APIs), SQL (T-SQL, Complex Temporal Joins, Stored Procedures), PySpark, Apache Spark, Hadoop, SQL Server, NoSQL.</p>
+      </div>
+      <div class="glass-card p-6 rounded-2xl sm:col-span-2">
+        <h3 class="font-display font-bold text-white mb-3">🛡️ Data Quality, Governance & CI/CD</h3>
+        <p class="text-sm text-slate-300 leading-relaxed">Data Validation Frameworks, Data Reconciliation, Automated Data Lineage, Real-Time Performance Monitoring, A/B Testing, Git CI/CD Pipelines, Agile/Scrum.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education & Certification -->
+  <section id="education" class="py-20 px-6 max-w-6xl mx-auto reveal">
+    <div class="mb-12">
+      <span class="text-xs uppercase tracking-widest text-sky-400 font-semibold">Credentials</span>
+      <h2 class="font-display text-3xl sm:text-4xl font-bold text-white mt-2">Education & Certification</h2>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-5">
+      <div class="glass-card p-6 rounded-2xl">
+        <span class="text-xs text-sky-400 font-semibold">Aug 2022 – May 2024</span>
+        <h3 class="font-display text-lg font-bold text-white mt-1">M.S. in Computer Science</h3>
+        <p class="text-sm text-slate-400 mt-1">University of Colorado Denver</p>
+      </div>
+      <div class="glass-card p-6 rounded-2xl">
+        <span class="text-xs text-sky-400 font-semibold">Aug 2017 – May 2021</span>
+        <h3 class="font-display text-lg font-bold text-white mt-1">B.S. in Computer Science</h3>
+        <p class="text-sm text-slate-400 mt-1">BML Munjal University</p>
+      </div>
+      <div class="glass-card p-6 rounded-2xl">
+        <span class="text-xs text-emerald-400 font-semibold">May 2026</span>
+        <h3 class="font-display text-lg font-bold text-white mt-1">SAFe Certified Scrum Master</h3>
+        <p class="text-sm text-slate-400 mt-1">Agile & Enterprise Delivery</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer / Contact -->
+  <footer id="contact" class="py-20 px-6 border-t border-slate-800/80 text-center">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="font-display text-3xl sm:text-4xl font-bold text-white mb-4">Let’s Build Data Systems That Scale.</h2>
+      <p class="text-slate-400 mb-8">Open to discussing AI Data Infrastructure, Cloud Lakehouses, and Enterprise Data Engineering.</p>
+      <div class="flex flex-wrap justify-center gap-4 mb-10">
+        <a href="https://linkedin.com/in/jagatmohithandhavarapu" target="_blank" class="px-6 py-3 rounded-xl font-semibold text-sm bg-sky-500 text-slate-950 hover:bg-sky-400 transition">
+          LinkedIn Profile
+        </a>
+        <a href="mailto:jagat@myworkingmail.com" class="px-6 py-3 rounded-xl font-semibold text-sm glass-card text-white">
+          jagat@myworkingmail.com
+        </a>
+      </div>
+      <p class="text-xs text-slate-500">© 2026 Jagat Mohith Andhavarapu · Engineered for Clarity & Performance</p>
+    </div>
+  </footer>
+
+  <!-- Scroll Reveal Script -->
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
